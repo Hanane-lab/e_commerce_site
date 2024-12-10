@@ -1,0 +1,97 @@
+
+<div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-color: white;height: 85vh;position: relative;">
+      <img src="iph16.jpeg" style="height: 60vh; width: 40vw;border: none;outline: none;margin: 60px;" >
+      <div style="position: absolute; top: 30vh; right: 30px;width: 40vw;">
+        <h2>Offres spéciales sur les coques de telephone</h2>
+        <button class="dec">decouvrire</button>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-color: rgb(173,154,150);">
+      <img src="im2.jpeg"  style="height: 85vh; width: 60vw;border: none;outline: none;" >
+      <div style="position: absolute; top: 25vh; right: 30px;width: 40vw;background-color: rgb(173,154,150);">
+        <h2>Plonger dnas un son exceptionnel avec les Beats Studio 3!</h2>
+        <h4>Comandez le votre dés aintenant et vivez la différence</h4>
+        <button class="dec">decouvrire</button>
+      </div>
+    </div>
+
+    <div class="carousel-item" style="background-color: rgb(246,246,248);">
+      <img src="pc1.jpeg"  style="height: 85vh; width: 60vw;border: none;outline: none;" >
+      <div style="position: absolute; top: 25vh; right: 30px;width: 40vw;">
+        <h2>Performance et élégance réunies: </h2>
+        <h4>Decouvrez notre dernier modéle !</h4>
+        <button class="dec">decouvrire</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- les promotion -->
+
+<h3>des promotions incroyables <span style="color: rgb(244, 14, 14); font-style: italic;">profiter rapidement</span> </h3>
+<div class="container conteneur row ">
+
+  <div class="col-sm-12 col-md-6 col-lg-3 col-mb-4 " *ngFor="let product of products">
+    <div class="card ">
+      <span class="pro">-20 DH</span>
+      <img [src]="product.image" class="card-img-top" alt="{{ product.name }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+
+        <p class="card-text "  style="color: green;display: flex; flex-direction: column;"><span style="color: rgb(235, 60, 6);text-decoration: line-through;">{{product.priceAvant}}MAD</span> Prix : {{ product.price }} MAD  </p>
+        <button class="btn " (click)="addToCart(product)">
+          acheter
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- pour resevoire les nouveauter -->
+<div >
+  <h4 style="padding: 20px 0 0 30px; color: black;">Se connecter pour resevoire nos nouveauter</h4>
+  <div class=" p-4" >
+    <h5 >Pour que vous soyez informer de nos promossion et nos nouvelles entrer votre information</h5>
+    <input type="text" class="text-control" placeholder="nom et prénom" >
+    <input type="email" class="text-control" placeholder="entrer votre gmail">
+    <button class="btn " type="button"  >submit</button>
+</div>
+</div>
+
+
+<div style="background-color: black; padding: 20px 60px; color: azure; width: 100vw;" class="row">
+  <div class="col-6">
+    <h5 style="padding-bottom: 20px;">Direct</h5>
+    <hr>
+    <pre>mobile: +212666878799
+        fix: +212566878799
+    </pre>
+  </div>
+  <div class="col-6">
+    <h5 style="padding-bottom: 20px;">Adresse</h5>
+    <hr>
+    <pre>Ecole Nationale des Sciences Appliquées , Avenue y Abdallah Km 5
+        Route d'Imouzzer , Fés BP 72.
+    </pre>
+  </div>
+</div>
+

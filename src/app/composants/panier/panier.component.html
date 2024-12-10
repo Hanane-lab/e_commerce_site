@@ -1,0 +1,27 @@
+<div class="container ">
+  <h1>Votre panier</h1>
+  <table class="table table-striped" *ngIf="cart.length > 0">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Nom</th>
+        <th>Prix unitaire</th>
+        <th>Quantité</th>
+        <th>Total</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cart">
+        <td><img [src]="item.image" alt="{{ item.name }}" width="50"></td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }} MAD</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price * item.quantity }} MAD</td>
+        <td><button class="btn btn-danger" (click)="removeFromCart(item.id)">Supprimer</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="cart.length === 0">Votre panier est vide.</p>
+  <h3>Total : {{ getTotalPrice() }} MAD</h3>
+</div>

@@ -1,0 +1,108 @@
+
+h2{
+  width: 90%;
+}
+h3 {
+  margin-left: 30px;
+  font-family: cursive;
+  margin-top: 10px;
+}
+
+h4
+{
+  color: brown;
+  font-style: italic;
+  margin-left: 30px;
+  font-family: cursive;
+}
+
+.card:hover{
+  transform: scale(1.1,1.1);
+}
+.dec:hover{
+  transform: scale(1.1,1.1);
+}
+.dec{
+  border-radius: 7px;
+  border: 1px solid;
+  color: white;
+  background-color: brown;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgb(80, 40, 40);
+}
+.dec:active{
+  transform: scale(0.9,0.9);
+  color: rgb(74, 70, 70);
+}
+a
+{
+  color: brown;
+  text-decoration: none;
+}
+.conteneur
+{
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin:2% auto;
+
+}
+.conteneur div{
+  border-radius: 20px;
+  height: 60vh;
+  margin-top: 10px;
+}
+.conteneur div div img{
+  border-radius: 20px;
+  height: 50%;
+}
+.pro{
+  background-color: rgb(240, 28, 28);
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 0 5px;
+  border: 1px solid rgb(91, 5, 5);
+  height: 30px;
+  width: 80px;
+  position: absolute;
+  top:10px;
+  left: -10px;
+  text-align: center;
+  padding-left: 10px;
+}
+input{
+  border:2px solid rgb(60, 56, 159);
+  border-radius: 15px;
+  width: 70%;
+  padding: 5px 20px;
+
+}
+.btn{
+  background: linear-gradient(to right, rgb(19, 124, 91) ,rgb(31, 7, 168),  rgb(68, 210, 246));
+
+  border-radius: 10px;
+  color: azure;
+  width: 150px;
+}
+.btn:hover{
+  transform: scale(1.1,1.1);
+}
+.p-4{
+  background-color:rgb(2, 13, 38) ;
+  box-shadow: 0 0 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 10%;
+  gap: 10px;
+  align-items:center ;
+}
+h5
+{
+  color: white ;
+  font-style: italic;
+}

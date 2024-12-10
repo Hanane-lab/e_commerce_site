@@ -1,0 +1,26 @@
+.btn
+{
+  color: rgb(252, 250, 250);
+  background-color: brown;
+  box-shadow: 0 0 10px ;
+}
+.btn:active{
+  transform: scale(0.9,0.9);
+}
+.conteneur
+{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 10px 10px 0;
+}
+.conteneur div{
+  border-radius: 20px;
+  height: 60vh;
+  margin-top: 10px;
+}
+.conteneur div div img{
+  border-radius: 20px;
+  height: 50%;
+
+}
